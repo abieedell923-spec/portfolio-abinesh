@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abinesh-Portfolio</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo">A<span>A</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Mobile menu toggle -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Abinesh</span></h1><br>
+      <p>A Full-Stack Developer & UI/UX Designer</p><br><br>
+      <a href="#projects" class="btn">View My Work</a><br>
+    </div>
+    <div class="hero-image">
+      <img src="assets/SPY.png" alt="Abinesh Portrait" />
+    </div>
+  </div>
+</header>
+
+
+  <!-- About Me Section -->
+  <section id="about" class="section about-section">
+  <h2>About Me</h2>
+  <p>
+    I’m <strong>Abinesh A</strong>, a passionate <b>Full Stack Developer</b> and <b>UI/UX Designer</b>.  
+    My mission is to bridge the gap between design and development by crafting interactive, functional, and visually appealing solutions.  
+  </p>
+
+  <p>
+    With a solid foundation in <b>Java, Python, SQL, HTML, CSS, JavaScript, and React</b>, I love turning ideas into working prototypes and then into production-ready applications.  
+    On the creative side, I bring designs to life using <b>Figma, Photoshop, and Illustrator</b>, ensuring that every product is not only functional but also user-friendly and visually engaging.
+  </p>
+
+  <p>
+    I thrive on solving complex problems and delivering seamless digital experiences.  
+    My approach blends <b>clean code</b>, <b>innovative design thinking</b>, and <b>user-centered principles</b> to create products that people truly enjoy using.  
+    I’m especially passionate about designing platforms that make a real-world impact — like adoption apps, community portals, and business websites.
+  </p>
+
+  <p>
+    Outside of coding and design, I constantly explore new tools, trends, and technologies to keep my skills sharp.  
+    Whether it's experimenting with animations, optimizing performance, or learning about new frameworks, I always look for ways to push my boundaries.  
+    I believe that great work comes from continuous learning, collaboration, and creativity.
+  </p>
+
+  <p><b>My goal:</b> To grow as a developer-designer hybrid who can handle both logic and visuals — creating experiences that are functional, scalable, and delightful ✨</p>
+</section>
+
+   
+<!-- Skills Section -->
+<section id="skills" class="section skills-section">
+  <h2>My Skills</h2>
+
+  <!-- Programming Languages -->
+  <h3 class="skills-category">Programming Languages</h3>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" />
+      <h3>Java</h3>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
+      <h3>Python</h3>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" />
+      <h3>JavaScript</h3>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png" alt="SQL" />
+      <h3>SQL</h3>
+    </div>
+  </div>
+
+  <!-- Web Development -->
+  <h3 class="skills-category">Web Development</h3>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" />
+      <h3>HTML5</h3>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" />
+      <h3>CSS3</h3>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap" />
+      <h3>Bootstrap</h3>
+    </div>
+  </div>
+
+  <!-- Tools & Design -->
+  <h3 class="skills-category">Tools & Design</h3>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel" />
+      <h3>Excel</h3>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma" />
+      <h3>Figma</h3>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968472.png" alt="Photoshop" />
+      <h3>Photoshop</h3>
+    </div>
+    <div class="skill-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Illustrator" />
+      <h3>Illustrator</h3>
+    </div>
+  </div>
+</section>
+
+
+
+
+ <section id="projects">
+    <h2> My Projects</h2>
+
+    <!-- UI/UX Projects -->
+    <h3 class="category-title">UI / UX</h3>
+    <div class="project-grid">
+
+      <div class="project-card" onclick="toggleDetails(this)">
+        <img src="assets/uix.jpg" alt="Pet Care Prototype">
+        <div class="project-card-content">
+          <h4>Pawrio</h4>
+          <p>Figma for pet adoption app.</p>
+        </div>
+        <div class="project-details">
+          <p><strong>Description:</strong> End-to-end prototype for adoption & care. website is on process</p>
+          <p class="tech-stack"><strong>Stack:</strong> <span>Figma</span><span>Wireframing</span><span>Prototyping</span></p>
+          <div class="links">
+            <a href="./assets/Pawrio_UX_Research.pdf">View Ux</a>
+            <a href="./assets/Pawrio_UI_Doc.pdf">View</a>
+             <a href="./assets/ui.pdf">View Ui</a>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- Web Development Projects -->
+    <h3 class="category-title">Web Development</h3>
+    <div class="project-grid">
+
+      <div class="project-card" onclick="toggleDetails(this)">
+        <img src="assets/wd.jpg" alt="Portfolio Website">
+        <div class="project-card-content">
+          <h4>E-Commerce Website</h4>
+          <p>Website with resposive and animations</p>
+        </div>
+        <div class="project-details">
+          <p><strong>Description:</strong> Showcases e-commerce website with responsive design.</p>
+          <p class="tech-stack"><strong>Stack:</strong> <span>HTML</span><span>Bootstrap</span></p>
+          <div class="links">
+            <a href="./assets/project1/kaira.html">Live</a>
+            <a href="./assets/kaira code.png">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="toggleDetails(this)">
+        <img src="assets/wd.jpg" alt="E-Commerce Store">
+        <div class="project-card-content">
+          <h4>Portfolio</h4>
+          <p>Full-stack web</p>
+        </div>
+        <div class="project-details">
+          <p><strong>Description:</strong>portfolio with responsive design.</p>
+          <p class="tech-stack"><strong>Stack:</strong> <span>HTML</span><span>Javascript</span><span>CSS</span></p>
+          <div class="links">
+            <a href="./index.html">Live</a>
+            <a href="./assets/code portfolio.png">Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Designing Projects -->
+    <h3 class="category-title">Designing</h3>
+    <div class="project-grid">
+
+      <div class="project-card" onclick="toggleDetails(this)">
+        <img src="assets/28543072_7447789.jpg" alt="Logo Design">
+        <div class="project-card-content">
+          <h4>Brand Logo</h4>
+          <p>Minimal and modern logo design.</p>
+        </div>
+        <div class="project-details">
+          <p><strong>Description:</strong> Created vector-based logos for startup branding.</p>
+          <p class="tech-stack"><strong>Stack:</strong> <span>Illustrator</span><span>Branding</span></p>
+          <div class="links">
+            <a href="assets/TREND logo.jpg">View</a>
+          </div>
+          <div class="links">
+            <a href="assets/taco logo.jpg">View</a>
+          </div>
+          <div class="links">
+            <a href="assets/tt tshirt.jpg">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="toggleDetails(this)">
+        <img src="assets/28543072_7447789.jpg" alt="Poster Design">
+        <div class="project-card-content">
+          <h4>Poster Design</h4>
+          <p>Creative posters for marketing.</p>
+        </div>
+        <div class="project-details">
+          <p><strong>Description:</strong> Event and campaign posters with typography design.</p>
+          <p class="tech-stack"><strong>Stack:</strong> <span>Photoshop</span><span>Illustration</span></p>
+          <div class="links">
+            <a href="assets/CR7.jpg">View</a>
+          </div>
+          <div class="links">
+            <a href="assets/behave.png">View</a>
+          </div>
+          <div class="links">
+            <a href="assets/burger.png">View</a>
+          </div>
+          <div class="links">
+            <a href="assets/spy.png">View</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <h2>My Resume</h2>
+    <div class="resume-buttons">
+      <a href="./assets/Abinesh CV.pdf" class="btn" target="_blank">View Resume</a>
+      <a href="./assets/Abinesh CV.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2><br>
+    <p>You can reach out to me via the links below:</p>
+
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/abinesh-a-597707262" target="_blank" class="contact-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="mailto:abinesh92003@gmail.com" class="contact-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" />
+        <span>abinesh92003@gmail.com</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Abinesh A. All Rights Reserved.</p>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>
